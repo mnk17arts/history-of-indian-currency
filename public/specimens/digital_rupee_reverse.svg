@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="tokenBaseRev" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a221d" />
+      <stop offset="65%" stop-color="#041611" />
+      <stop offset="92%" stop-color="#020b08" />
+      <stop offset="100%" stop-color="#000402" />
+    </radialGradient>
+
+    <linearGradient id="goldRimRev" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fceda2" />
+      <stop offset="25%" stop-color="#d4af37" />
+      <stop offset="50%" stop-color="#8a6e14" />
+      <stop offset="75%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#a38218" />
+    </linearGradient>
+
+    <radialGradient id="holoGlowRev" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f5c4" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#00a884" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Base Dark Plate -->
+  <circle cx="300" cy="300" r="290" fill="url(#tokenBaseRev)" />
+
+  <!-- Outer Milled Teeth -->
+  <circle cx="300" cy="300" r="285" fill="none" stroke="url(#goldRimRev)" stroke-width="4" />
+  <circle cx="300" cy="300" r="278" fill="none" stroke="#00f5c4" stroke-width="1.5" stroke-dasharray="3, 4" opacity="0.8" />
+
+  <!-- Curved Inscription Top: BHARAT SARKAR · GOVERNMENT OF INDIA -->
+  <path id="curveRevTop" fill="none" d="M 75 300 A 225 225 0 0 1 525 300" />
+  <text font-family="'Space Grotesk', 'DM Mono', monospace, sans-serif" font-size="19" font-weight="700" fill="url(#goldRimRev)" letter-spacing="7">
+    <textPath href="#curveRevTop" startOffset="50%" text-anchor="middle">
+      BHARAT SARKAR · GOVT OF INDIA
+    </textPath>
+  </text>
+
+  <!-- Curved Inscription Bottom: 2022 · SATYAMEVA JAYATE · 2022 -->
+  <path id="curveRevBottom" fill="none" d="M 525 300 A 225 225 0 0 1 75 300" />
+  <text font-family="'Space Grotesk', 'DM Mono', monospace, sans-serif" font-size="16" font-weight="600" fill="#00f5c4" letter-spacing="6">
+    <textPath href="#curveRevBottom" startOffset="50%" text-anchor="middle">
+      2022 · SATYAMEVA JAYATE · 2022
+    </textPath>
+  </text>
+
+  <!-- Inner Hologram Disc -->
+  <circle cx="300" cy="300" r="185" fill="url(#holoGlowRev)" />
+  <circle cx="300" cy="300" r="185" fill="none" stroke="url(#goldRimRev)" stroke-width="2" opacity="0.7" />
+  <circle cx="300" cy="300" r="176" fill="none" stroke="#00f5c4" stroke-width="1" stroke-dasharray="2, 6" opacity="0.6" />
+
+  <!-- Central Digital Denomination Number -->
+  <text x="300" y="255" font-family="'Space Grotesk', sans-serif" font-size="108" font-weight="800" fill="url(#goldRimRev)" text-anchor="middle">
+    1
+  </text>
+  <text x="300" y="295" font-family="'DM Mono', monospace" font-size="22" font-weight="700" fill="#00f5c4" letter-spacing="4" text-anchor="middle">
+    e₹ · ONE RUPEE
+  </text>
+  <text x="300" y="325" font-family="'DM Mono', monospace" font-size="16" font-weight="500" fill="#fceda2" letter-spacing="3" text-anchor="middle">
+    एक रुपया · EK RUPAYA
+  </text>
+
+  <!-- Stylized Cryptographic QR / Verification Seal in Center-Bottom -->
+  <g transform="translate(230, 350)" stroke="#00f5c4" stroke-width="1.5" fill="none" opacity="0.85">
+    <!-- QR Corner Targets -->
+    <rect x="0" y="0" width="30" height="30" rx="3" stroke="url(#goldRimRev)" stroke-width="2" />
+    <rect x="6" y="6" width="18" height="18" fill="url(#goldRimRev)" stroke="none" />
+
+    <rect x="110" y="0" width="30" height="30" rx="3" stroke="url(#goldRimRev)" stroke-width="2" />
+    <rect x="116" y="6" width="18" height="18" fill="url(#goldRimRev)" stroke="none" />
+
+    <rect x="0" y="50" width="30" height="30" rx="3" stroke="url(#goldRimRev)" stroke-width="2" />
+    <rect x="6" y="56" width="18" height="18" fill="url(#goldRimRev)" stroke="none" />
+
+    <!-- Matrix Data Dots -->
+    <g fill="#00f5c4">
+      <rect x="42" y="8" width="8" height="8" />
+      <rect x="58" y="8" width="8" height="8" />
+      <rect x="74" y="8" width="8" height="8" />
+      <rect x="90" y="8" width="8" height="8" />
+
+      <rect x="42" y="24" width="8" height="8" />
+      <rect x="74" y="24" width="8" height="8" />
+      <rect x="90" y="38" width="8" height="8" />
+
+      <rect x="42" y="44" width="8" height="8" />
+      <rect x="58" y="44" width="8" height="8" />
+      <rect x="74" y="60" width="8" height="8" />
+      <rect x="100" y="60" width="18" height="18" />
+    </g>
+  </g>
+
+  <!-- Protocol Badges at Bottom -->
+  <text x="300" y="468" font-family="'DM Mono', monospace" font-size="9" fill="#00f5c4" letter-spacing="2" text-anchor="middle">
+    INTEROPERABLE UPI QR · OFFLINE P2P SETTLEMENT
+  </text>
+  <text x="300" y="484" font-family="'DM Mono', monospace" font-size="8" fill="#52796f" letter-spacing="1.5" text-anchor="middle">
+    LEDGER: RBI-CBDC-CONSORTIUM-MAINNET
+  </text>
+</svg>

@@ -1,0 +1,13 @@
+node_modules
+dist
+*.local
+*.log
+scripts/
+resources/
+STATUS_TRACKER.md
+ISSUES.docx
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+.DS_Store
+Thumbs.db
